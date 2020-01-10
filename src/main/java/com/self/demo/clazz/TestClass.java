@@ -7,8 +7,11 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * class类测试用例
- */
+* @Description: class类测试用例
+* @Author: javaJoker
+* @CreateDate: 2020/1/10 10:54
+* @Version: 1.0
+*/
 public class TestClass {
     public static void main(String[] args) {
         // 基本类型判断

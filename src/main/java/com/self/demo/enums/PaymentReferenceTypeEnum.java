@@ -6,8 +6,7 @@ import java.util.Map;
 
 /**
 * @Description: 付款申请单关联类型枚举
-* @Author: DeYi Peng
-* @CreateDate: 2019/8/30 11:55
+* @Author: javaJoker
 * @Version: 1.0
 */
 public enum PaymentReferenceTypeEnum {
@@ -55,4 +54,13 @@ public enum PaymentReferenceTypeEnum {
 
     public void setMsg(String msg) {
         this.msg = msg;
-    }}
+    }
+}
+
+class TestEnum {
+    public static void main(String[] args) {
+        System.out.println(PaymentReferenceTypeEnum.getMsgByCode( 10 ));
+    }
+}
+
+

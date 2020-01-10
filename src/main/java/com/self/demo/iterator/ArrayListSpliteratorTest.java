@@ -8,6 +8,14 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.function.Consumer;
 import java.util.regex.Pattern;
 
+/**
+* @Description: 分隔迭代器
+* @Author: javaJoker
+* @CreateDate: 2020/1/10 10:52
+* @Version: 1.0
+ *
+ * 分隔迭代器最后计算结果时间 > 一般遍历时间
+*/
 public class ArrayListSpliteratorTest {
 
     public static void main(String[] args) {

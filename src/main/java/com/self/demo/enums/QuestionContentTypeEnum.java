@@ -1,4 +1,4 @@
-package com.self.jdk.java.basicType;
+package com.self.demo.enums;
 
 
 import org.apache.commons.lang3.StringUtils;
@@ -6,8 +6,8 @@ import org.apache.commons.lang3.StringUtils;
 import java.util.function.Consumer;
 
 /**
- * @Description: 题目类型枚举
- * @Author: DeYi Peng
+ * @Description: 枚举顺序显示
+ * @Author: javaJoker
  * @CreateDate: 2019/12/17 17:06
  * @Version: 1.0
  */
@@ -52,8 +52,9 @@ public enum QuestionContentTypeEnum {
 
 }
 
-class TestEnum{
+class TestEnum1{
     public static void main(String[] args) {
+        // 顺序显示
         for (QuestionContentTypeEnum enumItem : QuestionContentTypeEnum.values()){
             Consumer c = System.out::println;
             c.accept( enumItem.getMsg() );
