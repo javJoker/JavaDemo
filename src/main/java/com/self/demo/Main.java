@@ -15,6 +15,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // 获取cpu核心数
+        System.out.println(Runtime.getRuntime().availableProcessors());
 
         float d1 = 1.0f;
         float d2 = 0.9f;
