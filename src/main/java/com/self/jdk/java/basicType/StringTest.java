@@ -2,17 +2,21 @@ package com.self.jdk.java.basicType;
 
 public class StringTest {
     public static void main(String[] args) {
-        String a = "1234567";
-        char[] chars = a.toCharArray();
-        for (char c : chars){
-            System.out.println(c);
-        }
+//        test4();
 
 //        test3();
 
         //        test2();
 
 //        test1();
+    }
+
+    private static void test4() {
+        String a = "1234567";
+        char[] chars = a.toCharArray();
+        for (char c : chars){
+            System.out.println(c);
+        }
     }
 
     private static void test3() {
