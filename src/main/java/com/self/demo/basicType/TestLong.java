@@ -1,4 +1,4 @@
-package com.self.jdk.java.basicType;
+package com.self.demo.basicType;
 
 public class TestLong {
     public static void main(String[] args) {

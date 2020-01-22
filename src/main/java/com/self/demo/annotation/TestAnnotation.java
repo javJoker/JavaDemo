@@ -1,4 +1,4 @@
-package com.self.jdk.java.annotation;
+package com.self.demo.annotation;
 
 import java.util.Arrays;
 
