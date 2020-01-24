@@ -1,6 +1,7 @@
 package com.self.demo.clazz;
 
-import com.self.jdk.java.basicType.TestBigdecimal;
+
+import com.self.demo.basicType.TestBigdecimal;
 
 import java.math.BigDecimal;
 import java.util.Arrays;

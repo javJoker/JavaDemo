@@ -1,4 +1,4 @@
-package com.self.demo;
+package com.self.demo.map;
 
 import com.self.demo.model.Department;
 

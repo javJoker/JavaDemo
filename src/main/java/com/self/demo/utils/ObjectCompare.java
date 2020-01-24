@@ -1,4 +1,4 @@
-package com.self.demo;
+package com.self.demo.utils;
 
 import com.alibaba.fastjson.JSON;
 import com.self.demo.model.Department;

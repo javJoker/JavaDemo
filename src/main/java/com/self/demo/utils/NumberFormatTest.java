@@ -1,4 +1,4 @@
-package com.self.demo;
+package com.self.demo.utils;
 
 import java.math.BigDecimal;
 import java.text.NumberFormat;
