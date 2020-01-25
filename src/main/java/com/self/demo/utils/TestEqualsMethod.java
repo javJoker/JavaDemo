@@ -1,8 +1,11 @@
-package com.self.demo.annotation;
+package com.self.demo.utils;
 
 import java.util.Arrays;
 
-public class TestAnnotation {
+/**
+ * Equals 方法测试类
+ */
+public class TestEqualsMethod {
     public static void main(String[] args) {
 //        testFloatEquals();
 
