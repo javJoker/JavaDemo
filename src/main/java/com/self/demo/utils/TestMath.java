@@ -2,6 +2,7 @@ package com.self.demo.utils;
 
 /**
  * Math 方法测试类
+ * @author javaJoker
  */
 public class TestMath {
 

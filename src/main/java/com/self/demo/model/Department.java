@@ -1,12 +1,13 @@
 package com.self.demo.model;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
  *
  * @author javJoker
  */
-public class Department implements Cloneable{
+public class Department implements Cloneable, Serializable {
     private int id;
     private String deptName;
 
@@ -53,7 +54,18 @@ public class Department implements Cloneable{
     }
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public Object clone() throws CloneNotSupportedException {
+        Department demo = null;
+        try {
+            //浅复制
+            demo = (Department) super.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        //深度复制
+        demo.deptName = deptName;
+        demo.id = id;
+        return demo;
+
     }
 }
