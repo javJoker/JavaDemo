@@ -16,36 +16,36 @@ public class Main {
     public static void main(String[] args) {
 
 
-        float d1 = 1.0f;
-        float d2 = 0.9f;
-        System.out.println(d1);
-        System.out.println(d2);
-        System.out.println(d1 - d2);
-
-        float a1 = 0.9f;
-        float a2 = 0.8f;
-        System.out.println(a1 - a2);
-
-        System.out.println(Float.parseFloat( d1 + "" ) - Float.parseFloat(d2 + "") );
-        System.out.println(Float.valueOf( a1 - a2 ));
-
-        BigDecimal b1 = new BigDecimal( d1 );
-        BigDecimal b2 = new BigDecimal( d2 );
-        System.out.println(b1.subtract( b2 ));
-
-        BigDecimal b3 = new BigDecimal( a1 );
-        BigDecimal b4 = new BigDecimal( a1 );
-        System.out.println(b3.subtract( b4 ));
-
-
-        BigDecimal c1 = new BigDecimal( Double.parseDouble( "1.0" ) );
-        BigDecimal c2 = new BigDecimal( Double.parseDouble( "0.9" ));
-        System.out.println(c1.subtract( c2 ));
-
-        BigDecimal c3 = new BigDecimal( Double.parseDouble( "0.9" ) );
-        BigDecimal c4 = new BigDecimal( Double.parseDouble( "0.8" ) );
-        System.out.println( new BigDecimal( 1e-7 ).toString() );
-        System.out.println(c3.subtract( c4 ).compareTo( new BigDecimal( 1e-7 ) ));
+//        float d1 = 1.0f;
+//        float d2 = 0.9f;
+//        System.out.println(d1);
+//        System.out.println(d2);
+//        System.out.println(d1 - d2);
+//
+//        float a1 = 0.9f;
+//        float a2 = 0.8f;
+//        System.out.println(a1 - a2);
+//
+//        System.out.println(Float.parseFloat( d1 + "" ) - Float.parseFloat(d2 + "") );
+//        System.out.println(Float.valueOf( a1 - a2 ));
+//
+//        BigDecimal b1 = new BigDecimal( d1 );
+//        BigDecimal b2 = new BigDecimal( d2 );
+//        System.out.println(b1.subtract( b2 ));
+//
+//        BigDecimal b3 = new BigDecimal( a1 );
+//        BigDecimal b4 = new BigDecimal( a1 );
+//        System.out.println(b3.subtract( b4 ));
+//
+//
+//        BigDecimal c1 = new BigDecimal( Double.parseDouble( "1.0" ) );
+//        BigDecimal c2 = new BigDecimal( Double.parseDouble( "0.9" ));
+//        System.out.println(c1.subtract( c2 ));
+//
+//        BigDecimal c3 = new BigDecimal( Double.parseDouble( "0.9" ) );
+//        BigDecimal c4 = new BigDecimal( Double.parseDouble( "0.8" ) );
+//        System.out.println( new BigDecimal( 1e-7 ).toString() );
+//        System.out.println(c3.subtract( c4 ).compareTo( new BigDecimal( 1e-7 ) ));
 
 //        String[] str = {"aaas", "bbbb","c","d"};
 
