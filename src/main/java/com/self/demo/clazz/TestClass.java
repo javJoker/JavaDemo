@@ -2,10 +2,12 @@ package com.self.demo.clazz;
 
 
 import com.self.demo.basicType.TestBigdecimal;
+import com.self.demo.model.User;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 /**
 * @Description: class类测试用例
@@ -15,6 +17,17 @@ import java.util.List;
 */
 public class TestClass {
     public static void main(String[] args) {
+
+        Object a = new Object();
+        Object b = new Object();
+        User user = new User();
+        System.out.println(user.getClass().getName());
+        System.out.println(a.getClass().getName().compareTo(b.getClass().getName()));
+        System.out.println(a.getClass().getName().compareTo(user.getClass().getName()));
+//        test1();
+    }
+
+    private static void test1() {
         // 基本类型判断
         System.out.println( BigDecimal.class.isPrimitive());
         System.out.println(int.class.isPrimitive());
