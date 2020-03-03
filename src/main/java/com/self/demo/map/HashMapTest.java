@@ -1,12 +1,35 @@
-package com.self.demo;
+package com.self.demo.map;
 
+import com.self.demo.model.Apple;
 import com.self.demo.model.Department;
+import com.self.demo.model.User;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class HashMapTest {
     public static void main(String[] args) {
+        Map<Apple, String> map = new HashMap();
+        Apple apple1 = new Apple();
+        apple1.setId("1");
+        apple1.setName("a");
+        map.put(apple1, "a");
+
+
+        Apple apple2 = new Apple();
+        apple2.setId("1");
+        apple2.setName("a");
+        System.out.println(apple1.hashCode());
+        System.out.println(apple2.hashCode());
+        System.out.println(map.get(apple2));
+
+//        test4();
+//        test2();
+//        test3();
+
+    }
+
+    private static void test4() {
         Map<String, String> map = new HashMap();
         map.put( "22", "12222" );
         map.get( "22" );
@@ -18,9 +41,6 @@ public class HashMapTest {
         Object a = new Object();
         Object b = new Object();
         System.out.println(a.equals( b ));
-//        test2();
-//        test3();
-
     }
 
     private static void test3() {

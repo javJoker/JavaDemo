@@ -1,4 +1,4 @@
-package com.self.jdk.java.basicType;
+package com.self.demo.basicType;
 
 import java.math.BigDecimal;
 import java.util.HashSet;

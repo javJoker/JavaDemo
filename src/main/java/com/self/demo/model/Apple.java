@@ -3,10 +3,7 @@ package com.self.demo.model;
 import com.alibaba.fastjson.JSON;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.LongSummaryStatistics;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Apple {
@@ -85,6 +82,30 @@ public class Apple {
  
     public void setType(String type) {
         this.type = type;
+    }
+
+    @Override
+    public int hashCode() {
+        return (int)(Math.random()*100);
+    }
+
+    @Override
+    public String toString() {
+        return "Apple{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", count=" + count +
+                ", type='" + type + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Apple apple = (Apple) obj;
+        return this.toString().equals(apple.toString());
     }
 
     public static void main(String[] args) {

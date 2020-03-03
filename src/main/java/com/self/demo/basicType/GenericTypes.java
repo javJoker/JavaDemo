@@ -1,4 +1,4 @@
-package com.self.demo;
+package com.self.demo.basicType;
 
 /**
 * @Description: 基本类型包装类

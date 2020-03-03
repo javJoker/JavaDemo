@@ -1,4 +1,4 @@
-package com.self.demo;
+package com.self.demo.utils;
 
 import com.alibaba.fastjson.JSON;
 import com.self.demo.model.Department;
@@ -9,6 +9,11 @@ import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Object的Compare方法
+ *
+ * @author javaJoker
+ */
 public class ObjectCompare {
     public static void main(String[] args) {
         Department d1 = new Department( 1, "1" );
