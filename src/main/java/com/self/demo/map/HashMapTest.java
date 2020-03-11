@@ -9,6 +9,43 @@ import java.util.Map;
 
 public class HashMapTest {
     public static void main(String[] args) {
+//        System.out.println(1<<30);
+//        int i = tableSizeFor( Integer.MAX_VALUE );
+//        System.out.println("i: " + i);
+        Map a = new HashMap();
+
+        for (int i = 1; i < 12; i++){
+            a.put( i , i);
+        }
+
+        a.put( 12 , 12);
+        a.put( 13 , 13);
+
+//        test5();
+
+//        test4();
+//        test2();
+//        test3();
+
+    }
+
+    static final int MAXIMUM_CAPACITY = 1 << 30;
+
+    static final int tableSizeFor(int cap) {
+        int n = cap - 1;
+//        int n = cap ;
+        n |= n >>> 1;
+        n |= n >>> 2;
+        n |= n >>> 4;
+        n |= n >>> 8;
+        n |= n >>> 16;
+        System.out.println("n: " + n);
+        System.out.println("Integer.MAX_VALUE: " + Integer.MAX_VALUE);
+        return (n < 0) ? 1 : (n >= MAXIMUM_CAPACITY) ?
+                MAXIMUM_CAPACITY : n + 1;
+    }
+
+    private static void test5() {
         Map<Apple, String> map = new HashMap();
         Apple apple1 = new Apple();
         apple1.setId("1");
@@ -22,11 +59,6 @@ public class HashMapTest {
         System.out.println(apple1.hashCode());
         System.out.println(apple2.hashCode());
         System.out.println(map.get(apple2));
-
-//        test4();
-//        test2();
-//        test3();
-
     }
 
     private static void test4() {
@@ -91,14 +123,14 @@ public class HashMapTest {
 //        System.out.println(Integer.MAX_VALUE);
     }
 
-    static final long tableSizeFor(int cap) {
-        int n = cap - 1;
-//        long n = cap ;
-        n |= n >>> 1;
-        n |= n >>> 2;
-        n |= n >>> 4;
-        n |= n >>> 8;
-        n |= n >>> 16;
-        return n + 1;
-    }
+//    static final long tableSizeFor(int cap) {
+//        int n = cap - 1;
+////        long n = cap ;
+//        n |= n >>> 1;
+//        n |= n >>> 2;
+//        n |= n >>> 4;
+//        n |= n >>> 8;
+//        n |= n >>> 16;
+//        return n + 1;
+//    }
 }
