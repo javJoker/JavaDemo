@@ -1,4 +1,4 @@
-package com.self.demo.builder;
+package com.self.demo.pattern.builder;
 
 import com.google.common.collect.Lists;
 

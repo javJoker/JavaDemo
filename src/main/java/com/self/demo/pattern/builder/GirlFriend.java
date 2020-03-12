@@ -1,4 +1,4 @@
-package com.self.demo.builder;
+package com.self.demo.pattern.builder;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
@@ -6,7 +6,6 @@ import com.google.common.collect.Maps;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.StringJoiner;
 
 /**
  * @Description: TODO
