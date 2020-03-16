@@ -16,9 +16,9 @@ import java.util.function.Consumer;
 */
 public class ArrayListTest {
     public static void main(String[] args) {
-//        test2();
+        test2();
 
-        test1();
+//        test1();
 
     }
 
@@ -35,6 +35,20 @@ public class ArrayListTest {
         d1.setId(1);
         d1.setDeptName("111");
         a.add(d1);
+
+        // Arrays.copyOf 浅拷贝
+        Department[] dept = new Department[2];
+        dept[1] = d1;
+        Department[] departments = Arrays.copyOf(dept, dept.length);
+        System.out.println("======== 改变前 =========");
+        System.out.println(dept[1].getId());
+        System.out.println(departments[1].getId());
+
+        System.out.println("======== 改变后 =========");
+        d1.setId(2);
+        System.out.println(dept[1].getId());
+        System.out.println(departments[0].getId());
+
 
         // 浅拷贝
         System.out.println("=====================");

@@ -12,6 +12,15 @@ import java.util.StringJoiner;
 public class StringJoinerTest {
     public static void main(String[] args) {
         StringJoiner stringJoiner = new StringJoiner(",", "<", ">");
+        // 添加null字符串
+        stringJoiner.add(null);
+        stringJoiner.add("1111");
         System.out.println(stringJoiner.toString());
+
+        StringJoiner stringJoiner2 = new StringJoiner("|", "（", "）");
+        // 添加null字符串
+        stringJoiner2.add("aaaa");
+        stringJoiner2.add("bbbb");
+        System.out.println(stringJoiner.merge(stringJoiner2));
     }
 }
